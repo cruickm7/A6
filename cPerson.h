@@ -4,6 +4,7 @@ using namespace std;
 class cPerson {
 public:
     cPerson();
+    cPerson(char* na, char* ad, char* ph, char* em);
     ~cPerson();
     virtual void Accessor();
     virtual void Mutator();

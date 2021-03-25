@@ -4,6 +4,7 @@
 class cEmployee : public cPerson {
 public:
     cEmployee();
+    cEmployee(char* na, char* ad, char* ph, char* em, char* of, char* sa, char* d0);
     ~cEmployee();
     void Accessor();
     void Mutator();

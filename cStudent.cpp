@@ -3,7 +3,10 @@
 cStudent::cStudent():cPerson(){
     year = new char[100];
 }
-
+cStudent::cStudent(char *na, char *ad, char *ph, char *em, char *ye):cPerson(na, ad, ph, em){
+    year = new char[100];
+    strcpy(year, ye);
+}
 cStudent::~cStudent() {
     delete year;
 }

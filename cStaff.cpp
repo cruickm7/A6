@@ -4,6 +4,11 @@ cStaff::cStaff() {
     title = new char [100];
 }
 
+cStaff::cStaff(char *na, char *ad, char *ph, char *em, char *of, char *sa, char *d0, char *ti):cEmployee(na, ad, ph, em, of, sa, d0) {
+    title = new char [100];
+    strcpy(title, ti);
+}
+
 cStaff::~cStaff() {
     delete title;
 }
@@ -15,3 +20,5 @@ void cStaff::Mutator() {
     cout << "Enter Title:";
     cin.getline(title, 100);
 }
+
+

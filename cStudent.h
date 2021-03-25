@@ -4,6 +4,7 @@
 class cStudent : public cPerson {
 public:
     cStudent();
+    cStudent(char *na, char *ad, char *ph, char *em, char* ye);
     ~cStudent();
     void Accessor();
     void Mutator();
