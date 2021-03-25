@@ -6,7 +6,7 @@ cEmployee::cEmployee() {
     doh = new char [100];
 }
 
-cEmployee::cEmployee(char *na, char *ad, char *ph, char *em, char *of, char *sa, char *d0):cPerson(na, ad, ph, em) {
+cEmployee::cEmployee(char *na, char *ad, char *ph, char *em, char *of, char *sa, char *d0):cPerson(na, ad, ph, em) {    //Creates then assigns variables
     office = new char [100];
     salary = new char [100];
     doh = new char [100];

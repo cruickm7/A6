@@ -3,7 +3,7 @@
 cStudent::cStudent():cPerson(){
     year = new char[100];
 }
-cStudent::cStudent(char *na, char *ad, char *ph, char *em, char *ye):cPerson(na, ad, ph, em){
+cStudent::cStudent(char *na, char *ad, char *ph, char *em, char *ye):cPerson(na, ad, ph, em){   //Creates then assigns variables
     year = new char[100];
     strcpy(year, ye);
 }

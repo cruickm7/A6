@@ -7,7 +7,7 @@ cPerson::cPerson() {
     email = new char [100];
 }
 
-cPerson::cPerson(char *na, char *ad, char *ph, char *em) {
+cPerson::cPerson(char *na, char *ad, char *ph, char *em) {  //Creates then assigns variables
     name = new char [100];
     address = new char [100];
     phone = new char [100];

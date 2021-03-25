@@ -4,7 +4,7 @@ cStaff::cStaff() {
     title = new char [100];
 }
 
-cStaff::cStaff(char *na, char *ad, char *ph, char *em, char *of, char *sa, char *d0, char *ti):cEmployee(na, ad, ph, em, of, sa, d0) {
+cStaff::cStaff(char *na, char *ad, char *ph, char *em, char *of, char *sa, char *d0, char *ti):cEmployee(na, ad, ph, em, of, sa, d0) {  //Creates then assigns variables
     title = new char [100];
     strcpy(title, ti);
 }
