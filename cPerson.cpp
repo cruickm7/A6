@@ -40,3 +40,7 @@ void cPerson::Mutator() {
     cin.getline(email, 100);
 }
 
+void cPerson::ToString() {
+    Accessor();
+}
+

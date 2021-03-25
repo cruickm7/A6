@@ -34,4 +34,7 @@ void cEmployee::Mutator() {
     cin.getline(doh, 100);
 }
 
-
+void cEmployee::ToString() {
+    cPerson::Accessor();
+    Accessor();
+}

@@ -8,14 +8,14 @@ public:
     ~cStudent();
     void Accessor();
     void Mutator();
-    friend istream &operator>>( istream  &input, cStudent &s){
+    void ToString();
+    friend istream &operator >> ( istream  &input, cStudent &s){
         s.cPerson::Mutator();
         s.Mutator();
         return input;
     }
     friend ostream& operator << (ostream& output, cStudent &s){
-        s.cPerson::Accessor();
-        s.Accessor();
+        s.ToString();
         return output;
     }
 private:

@@ -33,4 +33,9 @@ void cFaculty::Mutator() {
     cin.getline(rank, 100);
 }
 
+void cFaculty::ToString() {
+    cPerson::Accessor();
+    cEmployee::Accessor();
+    Accessor();
+}
 

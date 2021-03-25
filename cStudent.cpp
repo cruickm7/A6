@@ -19,4 +19,8 @@ void cStudent::Mutator() {
     cout << "Enter Year:";
     cin.getline(year, 100);
 }
+void cStudent::ToString() {
+    cPerson::Accessor();
+    Accessor();
+}
 

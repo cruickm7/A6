@@ -6,8 +6,8 @@ using namespace std;
 int main() {
     cFaculty faculty;
     cStaff staff;
-    cStudent student;
-    cin >> student;
+    cStudent student("qwer","asdf", "ZXCv", "tyui", "hjkl");
+//    cin >> staff;
     cout << student;
     return 0;
 }

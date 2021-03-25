@@ -8,6 +8,7 @@ public:
     ~cFaculty();
     void Accessor();
     void Mutator();
+    void ToString();
     friend istream &operator >> ( istream  &input, cFaculty &f){
         f.cPerson::Mutator();
         f.cEmployee::Mutator();
@@ -15,9 +16,7 @@ public:
         return input;
     }
     friend ostream& operator << (ostream& output, cFaculty &f){
-        f.cPerson::Accessor();
-        f.cEmployee::Accessor();
-        f.Accessor();
+        f.ToString();
         return output;
     }
 private:

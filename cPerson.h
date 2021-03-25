@@ -8,12 +8,13 @@ public:
     ~cPerson();
     virtual void Accessor();
     virtual void Mutator();
+    virtual void ToString();
     friend istream &operator>>( istream  &input, cPerson &p){
         p.Mutator();
         return input;
     }
     friend ostream& operator << (ostream& output, cPerson &p){
-        p.Accessor();
+        p.ToString();
         return output;
     }
 

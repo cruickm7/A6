@@ -21,4 +21,8 @@ void cStaff::Mutator() {
     cin.getline(title, 100);
 }
 
-
+void cStaff::ToString() {
+    cPerson::Accessor();
+    cEmployee::Accessor();
+    Accessor();
+}
